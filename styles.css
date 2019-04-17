@@ -59,7 +59,7 @@ body {
     margin-right: 0;
 }
 
-.sprite { background: url('merge_from_ofoct.jpg') no-repeat top left; width: 275px; height: 176px;  } 
+ 
 .sprite.captur { background-position: 0 0; height: 183px; } 
 .sprite.duster { background-position: -274px 0; height: 183px; } 
 .sprite.espace { background-position: -564px 0; width: 305px; height: 165px; } 
