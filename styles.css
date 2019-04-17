@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: blue;
+}
+
+.memory-game {
+    width: 1000px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: tranform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 2px;
+    background: #1c7ccc;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.moves {
+    float : right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.sprite { background: url('merge_from_ofoct.jpg') no-repeat top left; width: 275px; height: 176px;  } 
+.sprite.captur { background-position: 0 0; height: 183px; } 
+.sprite.duster { background-position: -274px 0; height: 183px; } 
+.sprite.espace { background-position: -564px 0; width: 305px; height: 165px; } 
+.sprite.kwid { background-position: -870px 0; width: 287px; } 
+.sprite.lodgy { background-position: -1156px 0; width: 287px; } 
+.sprite.zoe { background-position: -1450px 0; width: 298px; height: 169px; } 
