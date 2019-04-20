@@ -11,7 +11,7 @@ fs.readFile('./index.html', function (err, data) {
             // set response header
             res.writeHead(200, { 'Content-Type': 'text/html' });
 
-            // set response content    
+            // set response content
             res.write(data);
             res.end();
 

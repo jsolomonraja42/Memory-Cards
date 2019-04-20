@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <title>Memory Card Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <section>
         <div class="moves">
-            <span>Moves: </span>
-            <span id="moveCount">0</span>
+            <h2>
+                <span>Moves: </span>
+                <span class="moveCount">0</span>
+            </h2>
         </div>
     </section>
 
@@ -66,6 +69,23 @@
             <img class="back-face" src="img/js-logo.png" alt="js-logo" />
         </div>
     </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p>Whoa!!! Your have opened all the cards.</p>
+            <p>You finished in <b class="moveCount"></b> moves.</p>
+
+            <span class="fa fa-star fa-5x checked"></span>
+            <span class="fa fa-star fa-5x"></span>
+            <span class="fa fa-star fa-5x"></span>
+            <p><span class="replay">Replay</span></p>
+
+        </div>
+
+    </div>
 
     <script src="scripts.js"></script>
 </body>
